@@ -30,7 +30,7 @@ body {
     position: relative; 
     background-color: #77ACA2;  
     min-height: 594px; 
-    min-width: 200px;
+    min-width: 320px;
 }
 
 .img--succulents {
@@ -42,16 +42,19 @@ body {
 .form {
     text-transform: uppercase; 
     color: #468189; 
-    padding: 30px; 
+    padding: 10px;
+    margin-left: 30px;  
 }
 
 .form__month-year-cvv-code-container {
-    display: flex;  
+    display: flex;   
+
 }
 
 .form__card-number-container, .form__month-year-cvv-code-container, .form__cardholder-name-container {
     min-width: 200px; 
-    margin-top: 70px;  
+    margin-top: 50px;
+    padding: 10px;   
 }
 
 .card-number, .month-year, .cvv-code, .cardholder-name {
@@ -60,9 +63,23 @@ body {
     border-left: none; 
     border-color: #9DBEBB; 
     background-color: #F4E9CD; 
-    letter-spacing: 0.3em;
-    color: #468189;  
+    letter-spacing: 0.3em; 
     font-size: 18px;
+    padding-top: 15px; 
+    padding-left: 10px; 
+}
+
+
+.card-number, .cardholder-name {
+    width: 400px; 
+}
+
+.month-year, .cvv-code {
+    width: 175px; 
+}
+
+.month-year {
+    margin-right: 40px; 
 }
 
 .button-container {
@@ -87,7 +104,7 @@ body {
     background-color: grey; 
 }
 
-.label {
+.label-card-number, .label-month-year, .label-cvv-code, .label-cardholder {
     display: flex;
     flex-direction: column;
 }
