@@ -7,27 +7,87 @@ body {
     justify-content: center; 
     align-items: center; 
     background-color: #9DBEBB;
-    min-height: 100vh; 
+    min-height: 100vh;
+    font-family: Roboto; 
+    font-size: 18px;  
 }
 
 .form-container {
     display: flex; 
-    flex-direction: row-reverse;  
-    background-color: #F4E9CD;
     min-width: 954px; 
     min-height: 594px; 
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
 }
 
-.form-container--green {
-    display: flex; 
+.form-container--yellow { 
+    flex-grow: 2; 
+    background-color: #F4E9CD;
+    min-height: 594px;
+}
+
+.form-container--green { 
+    flex-grow: 1; 
     position: relative; 
-    background-color: #77ACA2; 
-    min-width: 345px; 
+    background-color: #77ACA2;  
     min-height: 594px; 
+    min-width: 200px;
 }
 
 .img--succulents {
     position: absolute; 
     top: 100px; 
     right: 30px;  
+}
+
+.form {
+    text-transform: uppercase; 
+    color: #468189; 
+    padding: 30px; 
+}
+
+.form__month-year-cvv-code-container {
+    display: flex;  
+}
+
+.form__card-number-container, .form__month-year-cvv-code-container, .form__cardholder-name-container {
+    min-width: 200px; 
+    margin-top: 70px;  
+}
+
+.card-number, .month-year, .cvv-code, .cardholder-name {
+    border-top: none; 
+    border-right: none; 
+    border-left: none; 
+    border-color: #9DBEBB; 
+    background-color: #F4E9CD; 
+    letter-spacing: 0.3em;
+    color: #468189;  
+    font-size: 18px;
+}
+
+.button-container {
+    display:flex; 
+    justify-content: center; 
+}
+
+.submit-button {
+    border-radius: 40px; 
+    border: none; 
+    min-width: 202px; 
+    min-height: 48px; 
+    background-color: #468189;
+    color: white; 
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-top: 70px;  
+}
+
+.submit-button:hover {
+    background-color: grey; 
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
 }
