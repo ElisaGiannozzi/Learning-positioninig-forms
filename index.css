@@ -1,0 +1,33 @@
+body {
+    margin: 0; 
+}
+
+.main-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #9DBEBB;
+    min-height: 100vh; 
+}
+
+.form-container {
+    display: flex; 
+    flex-direction: row-reverse;  
+    background-color: #F4E9CD;
+    min-width: 954px; 
+    min-height: 594px; 
+}
+
+.form-container--green {
+    display: flex; 
+    position: relative; 
+    background-color: #77ACA2; 
+    min-width: 345px; 
+    min-height: 594px; 
+}
+
+.img--succulents {
+    position: absolute; 
+    top: 100px; 
+    right: 30px;  
+}
